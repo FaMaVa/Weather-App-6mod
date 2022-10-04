@@ -1,0 +1,44 @@
+body {
+    font-family:'Roboto', sans-serif;
+}
+
+h1 {
+    background: rgb(96, 149, 224);
+    background: linear-gradient(90deg, rgba(96, 149, 224, 1) 0%, rgba(73, 89, 172, 1) 35%, rgba(43, 59, 125, 1) 100%);
+    padding: 20px;
+    justify-content: center;
+}
+
+h5 {
+    padding-top: 10px;
+}
+
+h1,
+h3,
+h4,
+h5 {
+    font-weight: bold;
+}
+
+input {
+    font-size: 15px;
+}
+
+.forecast {
+    background-color: rgba(43, 59, 125, 1);
+    padding-left: 5px;
+}
+
+.history-btn {
+    background-color: lightgray;
+}
+
+#search-btn {
+    background-color: rgba(96, 149, 224, 1);
+}
+
+@media screen and (max-width: 767px) {
+    button {
+        max-width: 300px;
+    }
+  }
