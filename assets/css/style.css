@@ -24,6 +24,15 @@ input {
     font-size: 15px;
 }
 
+ul{
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    list-style: none;
+}
+
 .forecast {
     background-color: rgba(43, 59, 125, 1);
     padding-left: 5px;
@@ -38,7 +47,7 @@ input {
 }
 
 @media screen and (max-width: 767px) {
-    button {
+    #search-btn {
         max-width: 300px;
     }
   }

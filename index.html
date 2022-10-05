@@ -22,10 +22,11 @@
         <h3>Search for a City:</h3>
         <form>
           <input id="search-input" type="text" name="search" class="container-fluid form-control border-secondary my-1">
+          <div id="error" style="display:none">Enter a Valid City</div>
           <button id="search-btn" type="button" class="container-fluid btn d-flex justify-content-center my-2">Search</button>
         </form>
         <div id="search-history" class="border-top">
-          <button type="button" class="history-btn container-fluid btn d-flex justify-content-center my-2">City</button>
+          <ul id="city-history"></ul>
         </div>
       </div>
       <div id="results" class="col-lg-9 col-md-7 col-sm-12" style="display:none">
@@ -33,7 +34,7 @@
           <div class="row">
             <h3 id="city-text" class="col-auto mx-1 my-2"></h3>
             <h3 id="today-date" class="col-auto my-2"></h3>
-            <div><img id="today-icon" class="px-4" src="" /></div>
+            <div><img id="today-icon" class="px-3" src="" /></div>
           </div>
           <p id="today-temp" class="mx-1 my-4"></p>
           <p id="today-wind" class="mx-1 my-4"></p>
