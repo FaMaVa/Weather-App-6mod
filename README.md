@@ -17,7 +17,7 @@ N/A
 
 ## Usage
 
-Link to webpage: 
+Link to webpage: https://famava.github.io/Weather-App-6mod/
 <br/> 
 <br/>To use the application, type in a city into the search bar and click search. Then, the current weather conditions as well as a five-day forcast for that city will dislplay on the page. The city you looked up will also be saved as a button you could click later when you want to search for that city's weather again.
 <br/>
