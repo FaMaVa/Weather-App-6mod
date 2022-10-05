@@ -21,23 +21,23 @@
       <div id="search" class="col-lg-3 col-md-5 col-sm-12">
         <h3>Search for a City:</h3>
         <form>
-          <input type="text" name="search" class="container-fluid form-control border-secondary my-1">
+          <input id="search-input" type="text" name="search" class="container-fluid form-control border-secondary my-1">
           <button id="search-btn" type="button" class="container-fluid btn d-flex justify-content-center my-2">Search</button>
         </form>
         <div id="search-history" class="border-top">
           <button type="button" class="history-btn container-fluid btn d-flex justify-content-center my-2">City</button>
         </div>
       </div>
-      <div class="col-lg-9 col-md-7 col-sm-12">
+      <div id="results" class="col-lg-9 col-md-7 col-sm-12" style="display:none">
         <div id="city" class="conatiner-fluid border border-secondary">
           <div class="row">
-            <h3 id="city-text" class="col-auto mx-1 my-2">New York</h3>
-            <h3 class="date col-auto my-2">(12/12/12)</h3>
-            <i class="my-2"></i>
+            <h3 id="city-text" class="col-auto mx-1 my-2"></h3>
+            <h3 id="today-date" class="col-auto my-2"></h3>
+            <div><img id="today-icon" class="px-4" src="" /></div>
           </div>
-          <p class="temp mx-1 my-4">Temp</p>
-          <p class="wind mx-1 my-4">Wind</p>
-          <p class="humidity mx-1 my-4">Humidity</p>
+          <p id="today-temp" class="mx-1 my-4"></p>
+          <p id="today-wind" class="mx-1 my-4"></p>
+          <p id="today-humid" class="mx-1 my-4"></p>
         </div>
         <div id="forcast" class="conatiner">
           <div class="row">
@@ -45,34 +45,39 @@
           </div>
           <div class="row">
             <div class="forecast text-white col-xl-2 col-lg-3 col-md-5 col-sm-11 m-3">
-              <h5 class="date">12/12/12</h5>
-              <p class="temp">Temp</p>
-              <p class="wind">Wind</p>
-              <p class="humidity">Humidity</p>
+              <h5 id="tom-date"></h5>
+              <div><img id="tom-icon" src="" /></div>
+              <p id="tom-temp"></p>
+              <p id="tom-wind"></p>
+              <p id="tom-humid"></p>
             </div>
             <div class="forecast text-white col-xl-2 col-lg-3 col-md-5 col-sm-11 m-3">
-              <h5 class="date">12/12/12</h5>
-              <p class="temp">Temp</p>
-              <p class="wind">Wind</p>
-              <p class="humidity">Humidity</p>
+              <h5 id="2-date"></h5>
+              <div><img id="2-icon" src="" /></div>
+              <p id="2-temp"></p>
+              <p id="2-wind"></p>
+              <p id="2-humid"></p>
             </div>
             <div class="forecast text-white col-xl-2 col-lg-3 col-md-5 col-sm-11 m-3">
-              <h5 class="date">12/12/12</h5>
-              <p class="temp">Temp</p>
-              <p class="wind">Wind</p>
-              <p class="humidity">Humidity</p>
+              <h5 id="3-date"></h5>
+              <div><img id="3-icon" src="" /></div>
+              <p id="3-temp"></p>
+              <p id="3-wind"></p>
+              <p id="3-humid"></p>
             </div>
             <div class="forecast text-white col-xl-2 col-lg-3 col-md-5 col-sm-11 m-3">
-              <h5 class="date">12/12/12</h5>
-              <p class="temp">Temp</p>
-              <p class="wind">Wind</p>
-              <p class="humidity">Humidity</p>
+              <h5 id="4-date"></h5>
+              <div><img id="4-icon" src="" /></div>
+              <p id="4-temp"></p>
+              <p id="4-wind"></p>
+              <p id="4-humid"></p>
             </div>
             <div class="forecast text-white col-xl-2 col-lg-3 col-md-5 col-sm-11 m-3">
-              <h5 class="date">12/12/12</h5>
-              <p class="temp">Temp</p>
-              <p class="wind">Wind</p>
-              <p class="humidity">Humidity</p>
+              <h5 id="5-date"></h5>
+              <div><img id="5-icon" src="" /></div>
+              <p id="5-temp"></p>
+              <p id="5-wind"></p>
+              <p id="5-humid"></p>
             </div>
           </div>
         </div>
@@ -81,7 +86,7 @@
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   <script type="text/javascript" src="./assets/js/script.js"></script>
 </body>
 
